@@ -2,7 +2,11 @@
 <!DOCTYPE HTML>
 <html lang="eng">
 <head>
-  <title><?php echo $title; ?></title>
+  <title>
+    {% block title %}
+      Keron Therapeutic Massage
+    {% endblock %}
+  </title>
   <meta charset="utf-8">
   <link rel="stylesheet" href="/css/style.css">
 </head>
@@ -11,7 +15,12 @@
   <div class="header">
     <div class="container">
       <div class="row">
-        <?php echo $header; ?>
+        {% block header %}
+          <div class='col-md-9'>
+            <h1>Keron Therapeutic Massage</h1>
+            <p>Phone: 360-485-5384</p>
+          </div>
+        {% endblock %}
         <div class="col-md-2"><img src="/img/raelynn.jpg" alt="Raelynn Keron" class="portrait"></div>
       </div>
       <div class="external_links">
@@ -43,7 +52,12 @@
 
 
 <div class="container main-body">
-  {% block content %}{% endblock %}
+  <div class='col-md-11 title'>
+    <h1>{% block pagetitle %}{% endblock %}</h1>
+  </div>
+  <div class='col-md-11'>
+    {% block content %}{% endblock %}
+  </div>
 
 </div>
 

@@ -249,8 +249,7 @@ body {
 }
 
 .title {
-  position: relative;
-  top: 200;
+  margin-top: 200px;
 }
 
 
@@ -263,7 +262,7 @@ body {
   background-color: #006666;
   width: 100%;
   position: relative;
-  top: 630px;
+  top: 120px;
   padding: 15px 10px;
   margin-left: -8px;
   word-spacing: .2em;
