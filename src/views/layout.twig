@@ -1,72 +1,312 @@
+<!DOCTYPE html>
+<!--[if IE 8]>  <html class="ie ie8"> <![endif]-->
+<!--[if IE 9]>  <html class="ie ie9"> <![endif]-->
+<!--[if gt IE 9]><!-->  <html>  <!--<![endif]-->
+  <head>
 
-<!DOCTYPE HTML>
-<html lang="eng">
-<head>
-  <title>
-    {% block title %}
-      Keron Therapeutic Massage
-    {% endblock %}
-  </title>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="/css/style.css">
-</head>
-<body>
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <title>{% block title %}Keron Therapeutic Massage{% endblock %}</title>
+    <meta name="keywords" content="HTML5 Template" />
+    <meta name="description" content="Chloe - HTML5 Template">
+    <meta name="author" content="Zafer Yardimci">
 
-  <div class="header">
+
+    <!-- Web Fonts  -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic,600,600italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
+
+
+    <!-- Libs CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-responsive.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/font-awesome.css">
+
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="css/animate.css">
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="css/template.css">
+    <link rel="stylesheet" href="css/template-responsive.css">
+
+    <!-- Theme Colors CSS -->
+    <link rel="stylesheet" href="css/colors.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!-- Colorbox Css Skin -->
+    <link rel="stylesheet" href="css/colorbox/skin_3/colorbox.css">
+
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="img/favicon/favicon.png">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-touch-icon-144x144.png">
+
+
+    <!-- The HTML5 Shim for older browsers -->
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+
+    <!-- Facebook OpenGraph Tags - Go to http://developers.facebook.com/ for more information.
+    <meta property="og:title" content="Chloe Website Template."/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="http://www.example.com" />
+    <meta property="og:image" content="http://www.example.com" />
+    <meta property="og:site_name" content="Chloe"/>
+    <meta property="fb:app_id" content=""/>
+    <meta property="og:description" content="Chloe - HTML5 Template"/>
+    -->
+
+  </head>
+  <body>
+
+  <!-- Header Start -->
+  <header data-spy="affix" data-offset-top="210">
+
     <div class="container">
-      <div class="row">
-        {% block header %}
-          <div class='col-md-9'>
-            <h1>Keron Therapeutic Massage</h1>
-            <p>Phone: 360-485-5384</p>
+      <div class="header-content">
+
+        <!-- header top start -->
+        <div class="row-fluid header-top">
+
+
+          <!-- Author Infos Start -->
+          <div class="span7 left-shadow">
+
+
+            <!-- find me button Start -->
+            <div id="find_me">
+              <div id="button-shadow"></div>
+              <a><i class="icon-location-arrow"></i> Find Me</a>
+            </div>
+            <!-- find me button end -->
+
+
+            <!-- author photo Start -->
+            <div class="pull-left author-image-column">
+              <div class="author-background"></div>
+              <img src="http://placehold.it/82x98/464445/cccccc.png" id="author-image" alt="Linda Sylvain" />
+            </div>
+            <!-- author photo end -->
+
+
+            <!-- author name and description Start -->
+            <div class="pull-left author-infos-column">
+
+              <div class="author-info">
+                Linda Sylvain
+                <span class="author-work">/ Grafic Desinger</span>
+              </div>
+
+              <div class="hr"></div>
+
+              <div class="author-about">
+                I like to make cool and creative designs.
+                Feel free to take a look My template.
+              </div>
+
+            </div>
+            <div class="clearfix"></div>
+            <!-- author name and description end -->
+
+
           </div>
-        {% endblock %}
-        <div class="col-md-2"><img src="/img/raelynn.jpg" alt="Raelynn Keron" class="portrait"></div>
+          <!-- Author Infos End -->
+
+
+          <!-- Contact Infos Start -->
+          <div class="span5 text-right" id="contact">
+
+            <div>
+              <i class="icon-phone"></i> 555-787-121
+            </div>
+
+            <div class="address">
+              <i class="icon-map-marker"></i> 55 Sesame street, Lorem Ipsum
+            </div>
+
+            <div class="hr hr_right"></div>
+
+            <div class="email">
+              <a href="mailto:hi@zaferyardimci.com">
+                <i class="icon-envelope"></i> hi@zaferyardimci.com
+              </a>
+            </div>
+
+          </div>
+          <div class="clearfix"></div>
+          <!-- Contact Infos End -->
+
+
+          <!-- Google Map Area Start -->
+          <div id="header_opened"></div>
+          <!-- Google Map Area End -->
+
+        </div> <!-- header top end -->
+
+
+
+        <!-- Search Form Start -->
+        <form method="post" id="search-form">
+          <input placeholder="Search.." type="text" />
+        </form>
+        <!-- Search Form End -->
+
+
+
+        <!-- header bottom start -->
+        <div class="row-fluid header-bottom">
+
+
+          <!-- breadcrumb Start -->
+          <div class="pull-left">
+            <div class="custom-breadcrumb">
+              <a href="#">Home</a> <i class="icon-double-angle-right"></i> Page
+            </div>
+          </div>
+          <!-- breadcrumb End -->
+
+
+          <!-- Social Icons Start -->
+          <div class="pull-right text-right">
+            <a href="#" id="twitter-icon"></a>
+            <a href="#" id="facebook-icon"></a>
+            <a href="#" id="rss-icon"></a>
+            <a href="#" id="search-icon"></a>
+          </div>
+          <!-- Social Icons End -->
+
+          <div class="clearfix"></div>
+
+
+        </div> <!-- header bottom End -->
+
+
+      </div> <!-- .header-content End -->
+    </div> <!-- .container End -->
+  </header>
+  <!-- Header End -->
+
+
+  <!-- Main container Start -->
+  <div class="container main-container">
+
+    <!-- Nav Start -->
+    <nav>
+      <div class="affix nav-affix">
+
+        <!-- Logo Start -->
+        <div id="logo">
+          <a href="index.html">
+            <img src="img/logo.png" alt="Chloe" />
+          </a>
+        </div>
+        <!-- Logo End -->
+
+
+        <!-- Menu Start -->
+        <ul class="menu">
+
+          <li><a href="index.html"><i class="icon-home"></i> Home</a></li>
+
+          <li>
+            <a href="#"><i class="icon-pencil"></i> Blog</a>
+            <ul>
+              <li><a href="blog.html"><i class="icon-pencil"></i> Blog</a></li>
+              <li><a href="single-image.html"><i class="icon-picture"></i> Image Post</a></li>
+              <li><a href="single-video.html"><i class="icon-play-sign"></i> Video Post</a></li>
+              <li><a href="single-sound.html"><i class="icon-music"></i> Sound Post</a></li>
+              <li><a href="single-quote.html"><i class="icon-quote-left"></i> Quote Post</a></li>
+            </ul>
+          </li>
+
+          <li><a href="#"><i class="icon-briefcase"></i> Portfolio</a>
+            <ul>
+              <li><a href="portfolio.html"><i class="icon-briefcase"></i> Portfolio</a></li>
+              <li><a href="item.html"><i class="icon-star"></i> Portfolio Item</a></li>
+            </ul>
+          </li>
+
+          <li class="active"><a href="#"><i class="icon-rocket"></i> Features</a>
+            <ul>
+              <li><a href="typography.html"><i class="icon-font"></i> Typography</a></li>
+              <li class="active"><a href="page.html"><i class="icon-file-text"></i> Sample Page</a></li>
+            </ul>
+          </li>
+
+          <li><a href="contact.html"><i class="icon-phone-sign"></i> Contact Me</a></li>
+
+        </ul>
+        <!-- Menu End -->
+
+
       </div>
-      <div class="external_links">
-      <ul>
-        <li><a href="#"><img src="/img/glob/facebook.png"></a></li>
-        <li><a href="#"><img src="/img/glob/twitter.png"></a></li>
-        <li><a href="#"><img src="/img/glob/google.png"></a></li>
-      </ul>
-    </div>
-    </div>
-  </div>
+    </nav>
+    <!-- Nav End -->
 
-  <div class="navbar">
-    <div class="col-md-12 navbar-head">
-      <a href="index.php"><img src="/img/koru.jpg" alt=""></a>
-    </div>
-    <div class="nav">
-        <div class="button"><a href="#">About</a></div>
-        <div class="button"><a href="#">Rates & Services</a></div>
-        <div class="button"><a href="#">Testimonials</a></div>
-        <div class="button"><a href="#">Client Forms</a></div>
-        <div class="button"><a href="#">Contact</a></div>
-    </div>
-    <div class="new-client-discount">
-      <h3><a href="#">New Client Discount : $45 per hour!<a/></h3>
-    </div>
-  </div>
 
-<div class="container main-body">
-  <div class='col-md-11 title'>
-    <h1>{% block pagetitle %}{% endblock %}</h1>
-  </div>
-  <div class='col-md-11'>
-    {% block content %}{% endblock %}
-  </div>
-</div>
+    <!-- Section Start -->
+    <section>
 
-<div class="footer">
-  <div class="container">
-    <div class="copyright">
-      Copyright &copy; Keron Therapeutic Massage {{ "now"|date('Y', timezone="America/Los_Angeles") }}
-      <span>Phone: <a href="tel:3604855384">360-485-5384</a></span>
-    </div>
-    <a href="#">Contact</a>
-  </div>
-</div>
+      <!-- Page start -->
+      <article>
 
-</body>
+        <h2 class="page-heading">{% block pagetitle %}{% endblock %}</h2>
+        {% block content %}{% endblock %}
+
+
+      </article>
+      <!-- Page end -->
+
+    </section>
+    <!-- Section End -->
+
+
+
+    <!-- footer Start -->
+    <footer>
+      <div class="row-fluid">
+
+        <div class="span6">
+          &copy; Copyright 2013. All Rights Reserved.
+        </div>
+
+        <div class="span6 text-right">
+          Coded and designed by <a href="http://www.zaferyardimci.com" target="_blank">Zafer Yardimci</a>
+        </div>
+
+      </div>
+    </footer>
+    <!-- footer End -->
+
+
+  </div><!-- Main container End -->
+
+
+  <!-- Libs -->
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/colorbox.js"></script>
+
+  <!-- include Caroufredsel plugin -->
+  <script type="text/javascript" src="js/carouFredSel.js"></script>
+  <script type="text/javascript" src="js/touchSwipe.js"></script>
+
+  <!-- include Portfolio filter plugin -->
+  <script type="text/javascript" src="js/mixitup.js"></script>
+
+
+  <!-- theme scripts -->
+  <script src="js/scripts.js"></script>
+
+  <!-- custom.js for you can add your custom codes -->
+  <script src="js/custom.js"></script>
+
+
+  </body>
 </html>

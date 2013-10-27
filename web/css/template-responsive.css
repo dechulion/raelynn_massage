@@ -1,0 +1,374 @@
+/*
+*
+* Template Name: Chloe
+* Template URI: http://www.zaferyardimci.com
+* Template Author: Zafer Yardimci
+* License: GNU General Public License version 3.0
+* License URI: http://www.gnu.org/licenses/gpl-3.0.html
+* Version: 1.1
+*
+*
+* on 1200 and up screen width = contents width: 1170px
+* on 1199 and 1030 screen width = contents width: 940px
+* on 1029 and 742 screen width = contents width: 742px
+* on 742 and down screen width = contents width: 100%
+*
+*/
+
+
+/* ----------------------------------------------------- */
+/*  Desktop */
+/* ----------------------------------------------------- */
+@media (min-width:1200px) and (max-width:1260px)
+	{
+	.date,.read-more
+		{
+		display:none !important;
+		}
+	}
+
+
+@media (max-height: 800px) and (min-width: 940px) {
+
+	.fixed #logo
+		{
+		margin-top:50px;
+		margin-bottom:66px;
+		}
+
+	.menu li a
+		{
+		line-height: 42px !important;
+		min-height: 42px !important;
+		font-size:14px !important;
+		}
+
+	.menu li ul li a
+		{
+		font-size:13px !important;
+		}
+}
+
+
+@media (max-height: 600px) and (min-width: 940px) {
+
+	.fixed #logo
+		{
+		display:none;
+		}
+
+	.menu
+		{
+		margin-top:4px;
+		}
+
+}
+
+
+@media (min-width: 1200px)
+	{
+
+	.item
+		{
+		font-size:16px;
+		line-height:28px;
+		}
+
+	header .author-info
+		{
+		font-size:19px;
+		height:22px;
+		}
+
+	nav,.nav-affix
+		{
+		width:250px!important;
+		}
+
+	footer,section,header .header-content
+		{
+		margin-left:300px!important;
+		}
+
+	header .author-infos-column
+		{
+		width:360px;
+		}
+
+	header #contact
+		{
+		font-size:15px;
+		}
+
+	header #find_me
+		{
+		left:45.8%!important;
+		}
+
+	.projects-list .caroufredsel_wrapper
+		{
+		width:854px !important;
+		}
+
+	.projects-list li
+		{
+		margin:6px;
+		}
+
+	section .post-title
+		{
+		max-width:94%;
+		}
+
+	.fix_carousel
+		{
+		width:6px;
+		}
+
+	.small-heading .pull-left
+		{
+		padding-left:7px !important;
+		}
+
+	.small-heading .pull-right
+		{
+		padding-right:12px !important;
+		}
+
+	}
+
+
+
+/* ----------------------------------------------------- */
+/*  Tablet */
+/* ----------------------------------------------------- */
+@media (max-width: 1030px) {
+
+	.list_carousel li
+		{
+		margin-right:2px !important;
+		margin-left:2px !important;
+		}
+
+	.portfolio-list li
+		{
+		margin:4px !important;
+		}
+
+	nav,.nav-affix
+		{
+		width:52px;
+		}
+
+	nav #logo
+		{
+		display:none;
+		}
+
+	nav .menu li a
+		{
+		font-size:0px !important;
+		line-height:0px !important;
+		min-height:46px !important;
+		}
+
+	nav .menu li ul li a
+		{
+		font-size:0px !important;
+		}
+
+	header
+		{
+		position:fixed !important;
+		top:-133px !important;
+		height:180px!important;
+		margin-bottom:-133px !important;
+		overflow:hidden;
+		}
+
+	header #search-form input
+		{
+		bottom:4px;
+		}
+
+	.main-container
+		{
+		margin-top:47px;
+		}
+
+	nav
+		{
+		top:-47px;
+		padding-bottom:47px;
+		}
+
+	header .header-bottom
+		{
+		height:47px !important;
+		top:-2px !important;
+		padding-top:119px;
+		}
+
+	header .header-top
+		{
+		display:none !important;
+		padding-bottom:19px !important;
+		border-bottom:0px !important;
+		}
+
+	nav .menu li i
+		{
+		top:12px !important;
+		}
+
+	footer, section, header .header-content
+		{
+		margin-left:52px !important;
+		}
+
+	section
+		{
+		margin-top:0px !important;
+		}
+
+	.container
+		{
+		width:742px;
+		}
+
+	.menu li ul
+		{
+		margin:0px !important;
+		padding:0px !important;
+		}
+
+	.menu li ul li
+		{
+		margin:0px !important;
+		padding:0px !important;
+		border-left:0px !important;
+		border-bottom:1px solid rgba(0,0,0,0.1) !important;
+		}
+
+	.menu li ul li a
+		{
+		display:block;
+		text-align:center;
+		margin:0px !important;
+		padding-left:0px !important;
+		padding-right:0px !important;
+		padding-top:4px !important;
+		font-size:0px !important;
+		border:0px !important;
+		}
+
+	.menu li ul li a i
+		{
+		padding:0px !important;
+		margin:0px !important;
+		top:8px !important;
+		}
+
+	.comment-meta .text-right
+		{
+		display:none;
+		}
+
+	.item
+		{
+		font-size:14px !important;
+		}
+
+	.zoom span
+		{
+		background:transparent !important;
+		}
+
+	#ascrail2000
+		{
+		display:none !important;
+		background:transparent !important;
+		opacity:0;
+		}
+
+	.nav-affix
+		{
+		overflow:visible !important;
+		}
+
+
+}
+
+
+/* ----------------------------------------------------- */
+/*  Small Screen (Phone) */
+/* ----------------------------------------------------- */
+@media (max-width: 840px) {
+
+	.date,.read-more
+		{
+		display:none !important;
+		}
+
+}
+
+
+@media (max-width: 767px) {
+
+	header
+		{
+		overflow:hidden;
+		}
+
+	section
+		{
+		margin-top:0px;
+		}
+
+	.container
+		{
+		width:100%;
+		min-width:400px !important;
+		}
+
+	.post-type
+		{
+		display:none !important;
+		}
+
+	.post-title
+		{
+		font-size:18px !important;
+		float:none !important;
+		width:100% !important;
+		max-width:100% !important;
+		}
+
+	section
+		{
+		font-size:14px;
+		}
+
+	footer .span6
+		{
+		text-align:center !important;
+		}
+
+	.author-avatar
+		{
+		display:none !important;
+		}
+
+	.comment-right
+		{
+		background-image:none !important;
+		}
+
+	.project-image
+		{
+		width: 100%;
+		padding: 0px;
+		border: 0px none;
+		}
+
+}
