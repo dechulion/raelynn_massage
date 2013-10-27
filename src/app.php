@@ -8,8 +8,6 @@ $app->register(new Silex\Provider\TwigServiceProvider(), array(
   'twig.path' => __DIR__.'/views'
 ));
 
-// Be able to read things under here
-
 $app->before(function () use ($app) {
   $app['twig']->addGlobal('layout', $app['twig']->loadTemplate('layout.twig'));
 });
@@ -33,25 +31,4 @@ $app->get('/rates', function () use ($app) {
 
 // Write things above here
 
-$app->run();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+return $app;

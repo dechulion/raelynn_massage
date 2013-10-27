@@ -25,9 +25,9 @@
       </div>
       <div class="external_links">
       <ul>
-        <?php foreach (glob(__DIR__. "/../img/glob/*.png") as $social_icon) {
-          echo "<a href='#'><img src='/img/glob/" . basename($social_icon) . "'></a>";
-        }; ?>
+        <li><a href="#"><img src="/img/glob/facebook.png"></a></li>
+        <li><a href="#"><img src="/img/glob/twitter.png"></a></li>
+        <li><a href="#"><img src="/img/glob/google.png"></a></li>
       </ul>
     </div>
     </div>
@@ -49,8 +49,6 @@
     </div>
   </div>
 
-
-
 <div class="container main-body">
   <div class='col-md-11 title'>
     <h1>{% block pagetitle %}{% endblock %}</h1>
@@ -58,12 +56,14 @@
   <div class='col-md-11'>
     {% block content %}{% endblock %}
   </div>
-
 </div>
 
 <div class="footer">
   <div class="container">
-    <div class="copyright">Copyright &copy; Keron Therapeutic Massage <?php echo date('Y');?>  <span>Phone: 360-485-5384</span></div>
+    <div class="copyright">
+      Copyright &copy; Keron Therapeutic Massage {{ "now"|date('Y', timezone="America/Los_Angeles") }}
+      <span>Phone: <a href="tel:3604855384">360-485-5384</a></span>
+    </div>
     <a href="#">Contact</a>
   </div>
 </div>
