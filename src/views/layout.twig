@@ -18,27 +18,27 @@
 
 
     <!-- Libs CSS -->
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/bootstrap-responsive.css">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/bootstrap-responsive.css">
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="/css/font-awesome.css">
 
     <!-- Animate CSS -->
-    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="/css/animate.css">
 
     <!-- Theme CSS -->
-    <link rel="stylesheet" href="css/template.css">
-    <link rel="stylesheet" href="css/template-responsive.css">
+    <link rel="stylesheet" href="/css/template.css">
+    <link rel="stylesheet" href="/css/template-responsive.css">
 
     <!-- Theme Colors CSS -->
-    <link rel="stylesheet" href="css/colors.css">
+    <link rel="stylesheet" href="/css/colors.css">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="/css/custom.css">
 
     <!-- Colorbox Css Skin -->
-    <link rel="stylesheet" href="css/colorbox/skin_3/colorbox.css">
+    <link rel="stylesheet" href="/css/colorbox/skin_3/colorbox.css">
 
 
     <!-- Favicons -->
@@ -89,8 +89,8 @@
 
             <!-- author photo Start -->
             <div class="pull-left author-image-column">
-              <div class="author-background"></div>
-              <img src="http://placehold.it/82x98/464445/cccccc.png" id="author-image" alt="Linda Sylvain" />
+              {# <div class="author-background"></div> #}
+              <img src="/img/raelynn.jpg" alt="Raelynn Keron" id="author-image"/>
             </div>
             <!-- author photo end -->
 
@@ -99,8 +99,8 @@
             <div class="pull-left author-infos-column">
 
               <div class="author-info">
-                Linda Sylvain
-                <span class="author-work">/ Grafic Desinger</span>
+                Raelynn Keron
+                <span class="author-work">/ Massage Therapist</span>
               </div>
 
               <div class="hr"></div>
@@ -123,18 +123,18 @@
           <div class="span5 text-right" id="contact">
 
             <div>
-              <i class="icon-phone"></i> 555-787-121
+              <i class="icon-phone"></i> 360-485-5384
             </div>
 
-            <div class="address">
+            {# <div class="address">
               <i class="icon-map-marker"></i> 55 Sesame street, Lorem Ipsum
-            </div>
+            </div> #}
 
             <div class="hr hr_right"></div>
 
             <div class="email">
-              <a href="mailto:hi@zaferyardimci.com">
-                <i class="icon-envelope"></i> hi@zaferyardimci.com
+              <a href="mailto:raerin26@yahoo.com">
+                <i class="icon-envelope"></i> raerin26@yahoo.com
               </a>
             </div>
 
@@ -152,9 +152,9 @@
 
 
         <!-- Search Form Start -->
-        <form method="post" id="search-form">
+        {# <form method="post" id="search-form">
           <input placeholder="Search.." type="text" />
-        </form>
+        </form> #}
         <!-- Search Form End -->
 
 
@@ -162,13 +162,17 @@
         <!-- header bottom start -->
         <div class="row-fluid header-bottom">
 
+          <div class="new-client">
+            <a href="/index.php/rates"><p>New Client Discount: $45 / hour</p></a>
+          </div>
+
 
           <!-- breadcrumb Start -->
-          <div class="pull-left">
+          {# <div class="pull-left">
             <div class="custom-breadcrumb">
               <a href="#">Home</a> <i class="icon-double-angle-right"></i> Page
             </div>
-          </div>
+          </div> #}
           <!-- breadcrumb End -->
 
 
@@ -177,7 +181,7 @@
             <a href="#" id="twitter-icon"></a>
             <a href="#" id="facebook-icon"></a>
             <a href="#" id="rss-icon"></a>
-            <a href="#" id="search-icon"></a>
+            <a href="#" id="google-icon"></a>
           </div>
           <!-- Social Icons End -->
 
@@ -203,7 +207,7 @@
         <!-- Logo Start -->
         <div id="logo">
           <a href="index.html">
-            <img src="img/logo.png" alt="Chloe" />
+            <img src="/img/logo.png" alt="Chloe" />
           </a>
         </div>
         <!-- Logo End -->
@@ -212,31 +216,39 @@
         <!-- Menu Start -->
         <ul class="menu">
 
-          <li><a href="index.html"><i class="icon-home"></i> Home</a></li>
+          <li class="active"><a href="/"><i class="icon-home"></i> Home</a></li>
+
+          <li><a href="/index.php/about"><i class="icon-person"></i> About</a>
+            {# <ul>
+              <li><a href="#"><!-- <i class="icon-briefcase"></i> --> Education</a></li>
+              <li><a href="#"><!-- <i class="icon-star"></i> --> Personal Info</a></li>
+            </ul> #}
+          </li>
 
           <li>
-            <a href="#"><i class="icon-pencil"></i> Blog</a>
+            <a href="#"><i class="icon-star"></i> Rates & Services</a>
             <ul>
-              <li><a href="blog.html"><i class="icon-pencil"></i> Blog</a></li>
-              <li><a href="single-image.html"><i class="icon-picture"></i> Image Post</a></li>
-              <li><a href="single-video.html"><i class="icon-play-sign"></i> Video Post</a></li>
-              <li><a href="single-sound.html"><i class="icon-music"></i> Sound Post</a></li>
-              <li><a href="single-quote.html"><i class="icon-quote-left"></i> Quote Post</a></li>
+              <li><a href="/index.php/rates"><!-- <i class="icon-pencil"></i> --> Rates</a></li>
+              <li><a href="#"><!-- <i class="icon-picture"></i> --> Deep Tissue</a></li>
+              <li><a href="#"><!-- <i class="icon-play-sign"></i> --> Circulatory</a></li>
+              <li><a href="#"><!-- <i class="icon-music"></i> --> Sports</a></li>
+              <li><a href="#"><!-- <i class="icon-quote-left"></i> --> Shiatsu</a></li>
             </ul>
           </li>
 
-          <li><a href="#"><i class="icon-briefcase"></i> Portfolio</a>
-            <ul>
-              <li><a href="portfolio.html"><i class="icon-briefcase"></i> Portfolio</a></li>
-              <li><a href="item.html"><i class="icon-star"></i> Portfolio Item</a></li>
-            </ul>
+
+          <li><a href="/index.php/testimonials"><i class="icon-comments-alt"></i> Testimonials</a>
           </li>
 
-          <li class="active"><a href="#"><i class="icon-rocket"></i> Features</a>
-            <ul>
-              <li><a href="typography.html"><i class="icon-font"></i> Typography</a></li>
-              <li class="active"><a href="page.html"><i class="icon-file-text"></i> Sample Page</a></li>
-            </ul>
+          <li>
+            <a href="/index.php/forms"><i class="icon-pencil"></i> Client Forms</a>
+              {# <ul>
+                <li><a href="#"><!-- <i class="icon-pencil"></i> --> First-time Client Health History</a></li>
+                <li><a href="#"><!-- <i class="icon-picture"></i> --> Screening Questionnaire</a></li>
+                <li><a href="#"> <!-- <i class="icon-play-sign"></i> --> Body Map for Clients</a></li>
+                <li><a href="#"><!-- <i class="icon-music"></i> --> Physician's Permission</a></li>
+                <li><a href="#"><!-- <i class="icon-quote-left"></i> --> Physician's Referral form</a></li>
+              </ul> #}
           </li>
 
           <li><a href="contact.html"><i class="icon-phone-sign"></i> Contact Me</a></li>
@@ -259,6 +271,7 @@
         <h2 class="page-heading">{% block pagetitle %}{% endblock %}</h2>
         {% block content %}{% endblock %}
 
+        <a href="http://www.abmp.com/home/"><img src="/img/abmp.png" alt"Member ABMP" class="abmp"></a>
 
       </article>
       <!-- Page end -->
@@ -273,7 +286,7 @@
       <div class="row-fluid">
 
         <div class="span6">
-          &copy; Copyright 2013. All Rights Reserved.
+          &copy; Copyright {{ "now"|date("Y") }}. All Rights Reserved.
         </div>
 
         <div class="span6 text-right">
@@ -289,23 +302,23 @@
 
 
   <!-- Libs -->
-  <script src="js/jquery.js"></script>
-  <script src="js/bootstrap.js"></script>
-  <script src="js/colorbox.js"></script>
+  <script src="/js/jquery.js"></script>
+  <script src="/js/bootstrap.js"></script>
+  <script src="/js/colorbox.js"></script>
 
   <!-- include Caroufredsel plugin -->
-  <script type="text/javascript" src="js/carouFredSel.js"></script>
-  <script type="text/javascript" src="js/touchSwipe.js"></script>
+  <script type="text/javascript" src="/js/carouFredSel.js"></script>
+  <script type="text/javascript" src="/js/touchSwipe.js"></script>
 
   <!-- include Portfolio filter plugin -->
-  <script type="text/javascript" src="js/mixitup.js"></script>
+  <script type="text/javascript" src="/js/mixitup.js"></script>
 
 
   <!-- theme scripts -->
-  <script src="js/scripts.js"></script>
+  <script src="/js/scripts.js"></script>
 
   <!-- custom.js for you can add your custom codes -->
-  <script src="js/custom.js"></script>
+  <script src="/js/custom.js"></script>
 
 
   </body>

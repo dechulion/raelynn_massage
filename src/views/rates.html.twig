@@ -1,7 +1,7 @@
 {% extends layout %}
 
 {% block title %}
-  Rates & Services
+  Rates - Keron Therapeutic Massage
 {% endblock %}
 
 {% block pagetitle %}
@@ -9,10 +9,37 @@
 {% endblock %}
 
 {% block content %}
-  <p>Investing in massage is an investment in your health.</p>
-  <p>Personalized Massage.....$1/minute, 45 min. minimum</p>
+  <h4>Investing in massage is an investment in your health.</h4><br>
+  <table class="service-table">
+    <thead>
+      <tr>
+        <th>Services</th>
+        <th>Rates</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Personalized Massage</td>
+        <td>$1/minute, 45 min. minimum</td>
+      </tr>
+      <tr>
+        <td>First Time Clients</td>
+        <td>.75/minute, 45 min. minimum</td>
+      </tr>
+      <tr>
+        <td>2 hours+</td>
+        <td>10% off*</td>
+      </tr>
+      <tr>
+        <td>Travel over 10 miles</td>
+        <td>$5 flat fee**</td>
+      </tr>
+    </tbody>
+  </table><br>
+  {# <p>Personalized Massage.....$1/minute, 45 min. minimum</p>
+  <p>First Time Clients.....$.75/minute, 45 min. minimum</p>
   <p>2 hours+.....................10% off*</p>
-  <p>Travel over 10 miles.......$5 flat fee**</p>
+  <p>Travel over 10 miles.......$5 flat fee**</p> #}
   <p>*The two hours is not limited to one person.</p>
   <p>**I am a mobile massage therapist so I only charge extra for mileage beyond 10  miles from my home.</p>
 {% endblock %}
