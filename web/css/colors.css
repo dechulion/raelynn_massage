@@ -35,7 +35,8 @@ section
 
 nav
 	{
-	background-color:#ffff99;
+	background-color: #ffff99;
+	background-color: rgba(255, 255, 153, 0.9);
 	border-left:1px solid #ffcc99;
 	}
 
@@ -44,6 +45,7 @@ body
 	background-color:#f1f1f1;
 	color:#666;
 	background-image:url("../img/moss.jpg");
+	background-position: center;
 	}
 
 section,footer
@@ -302,7 +304,7 @@ article .read-more i
 
 .menu li i
 	{
-	color:#F2B7AC;
+	color: #666;
 	}
 
 .menu li:hover i
