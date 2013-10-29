@@ -36,6 +36,26 @@ $app->get('/forms', function () use ($app) {
 $app->get('/testimonials', function () use ($app) {
   return $app['twig']->render('testimonials.html.twig');
 });
+
+$app->get('/deeptissue', function () use ($app) {
+  return $app['twig']->render('deeptissue.html.twig');
+});
+
+$app->get('/swedish', function () use ($app) {
+  return $app['twig']->render('swedish.html.twig');
+});
+
+$app->get('/sports', function () use ($app) {
+  return $app['twig']->render('sports.html.twig');
+});
+
+$app->get('/shiatsu', function () use ($app) {
+  return $app['twig']->render('shiatsu.html.twig');
+});
+
+$app->get('/contact', function () use ($app) {
+  return $app['twig']->render('contact.html.twig');
+});
 // Write things above here
 
 return $app;

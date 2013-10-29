@@ -229,10 +229,10 @@
             <a href="#"><i class="icon-star"></i> Rates & Services</a>
             <ul>
               <li><a href="/index.php/rates"><!-- <i class="icon-pencil"></i> --> Rates</a></li>
-              <li><a href="#"><!-- <i class="icon-picture"></i> --> Deep Tissue</a></li>
-              <li><a href="#"><!-- <i class="icon-play-sign"></i> --> Circulatory</a></li>
-              <li><a href="#"><!-- <i class="icon-music"></i> --> Sports</a></li>
-              <li><a href="#"><!-- <i class="icon-quote-left"></i> --> Shiatsu</a></li>
+              <li><a href="/index.php/deeptissue"><!-- <i class="icon-picture"></i> --> Deep Tissue</a></li>
+              <li><a href="/index.php/swedish"><!-- <i class="icon-play-sign"></i> --> Circulatory</a></li>
+              <li><a href="/index.php/sports"><!-- <i class="icon-music"></i> --> Sports</a></li>
+              <li><a href="/index.php/shiatsu"><!-- <i class="icon-quote-left"></i> --> Shiatsu</a></li>
             </ul>
           </li>
 
@@ -251,11 +251,11 @@
               </ul> #}
           </li>
 
-          <li><a href="contact.html"><i class="icon-phone-sign"></i> Contact Me</a></li>
+          <li><a href="/index.php/contact"><i class="icon-phone-sign"></i> Contact Me</a></li>
 
         </ul>
         <!-- Menu End -->
-
+        <a href="http://www.abmp.com/home/"><img src="/img/abmp.png" alt"Member ABMP" class="abmp"></a>
 
       </div>
     </nav>
@@ -267,12 +267,9 @@
 
       <!-- Page start -->
       <article>
-        <div class="span8">
-          <h2 class="page-heading">{% block pagetitle %}{% endblock %}</h2>
-        </div>
-        {% block content %}{% endblock %}
 
-        <a href="http://www.abmp.com/home/"><img src="/img/abmp.png" alt"Member ABMP" class="abmp"></a>
+        <h2 class="page-heading">{% block pagetitle %}{% endblock %}</h2>
+        {% block content %}{% endblock %}
 
       </article>
       <!-- Page end -->
