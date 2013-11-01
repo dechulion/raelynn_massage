@@ -1,7 +1,10 @@
 /* Add here all your CSS customizations */
 
 .abmp {
-  margin-left: 30px;
+  margin-left: 70px;
+  margin-top: 20px;
+  width: 100px;
+  height: 100px;
 }
 
 .menu {
@@ -72,6 +75,7 @@ section article p {
 
 .projects-list {
   position: relative;
+  height: 260px;
 }
 
 .projects-list li {

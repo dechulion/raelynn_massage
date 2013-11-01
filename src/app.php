@@ -2,6 +2,9 @@
 
 require_once __DIR__.'/../vendor/autoload.php';
 
+use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
+
 $app = new Silex\Application();
 
 $app->register(new Silex\Provider\TwigServiceProvider(), array(
@@ -55,6 +58,13 @@ $app->get('/shiatsu', function () use ($app) {
 
 $app->get('/contact', function () use ($app) {
   return $app['twig']->render('contact.html.twig');
+});
+
+$app->post('/contact', function (Request $request) {
+    $message = $request->get('message');
+    mail('raerin26@yahoo.com', 'Keron Therapeutic Massage (Message)', $message);
+
+    return new Response ('Thank you for your message', 201);
 });
 // Write things above here
 
