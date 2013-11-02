@@ -297,7 +297,10 @@
     // Carausel Plugin
     $('.caroufredsel').carouFredSel({
 
-        auto: {},
+        auto: {
+          timeoutDuration: 6000,
+          duration: 2000
+        },
 
         swipe: {
             onMouse: true,

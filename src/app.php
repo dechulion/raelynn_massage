@@ -7,9 +7,20 @@ use Symfony\Component\HttpFoundation\Response;
 
 $app = new Silex\Application();
 
+$app->register(new Silex\Provider\SwiftmailerServiceProvider());
+
 $app->register(new Silex\Provider\TwigServiceProvider(), array(
   'twig.path' => __DIR__.'/views'
 ));
+
+$app['swiftmailer.options'] = array(
+    'host' => 'host',
+    'port' => '25',
+    'username' => 'raerin26',
+    'password' => '12345',
+    'encryption' => null,
+    'auth_mode' => null
+);
 
 $app->before(function () use ($app) {
   $app['twig']->addGlobal('layout', $app['twig']->loadTemplate('layout.twig'));
@@ -60,11 +71,18 @@ $app->get('/contact', function () use ($app) {
   return $app['twig']->render('contact.html.twig');
 });
 
-$app->post('/contact', function (Request $request) {
-    $message = $request->get('message');
-    mail('raerin26@yahoo.com', 'Keron Therapeutic Massage (Message)', $message);
+$app->post('/contact', function () use ($app) {
+    $request = $app['request'];
 
-    return new Response ('Thank you for your message', 201);
+    $message = \Swift_Message::newInstance()
+        ->setSubject('Keron Therapeutic Massage Contact')
+        ->setFrom($request->get('email'))
+        ->setTo(array('raerin26@yahoo.com'))
+        ->setBody($request->get('message'));
+
+    $app['mailer']->send($message);
+
+    return $app['twig']->render('thankyou.html.twig');
 });
 // Write things above here
 

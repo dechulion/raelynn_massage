@@ -1,5 +1,9 @@
 /* Add here all your CSS customizations */
-
+article {
+  padding-left: 26px;
+  padding-right: 30px;
+  padding-top: 20px;
+}
 .abmp {
   margin-left: 70px;
   margin-top: 20px;
@@ -53,7 +57,81 @@ section article p {
   color: #006666;
 }
 
-.customer-testimonial {
+.caroufredsel_wrapper {
+  background: none;
+}
+
+section article ul li {
+background: none;
+}
+
+.modalities_heading {
+  padding-left: 10px;
+  border-bottom: solid 1px #666;
+}
+
+.modalities_description {
+ width: 400px;
+ float: left;
+ margin-left: 40px;
+ text-align: center;
+}
+
+.modalities_description a {
+  color: #009999;
+}
+
+.modalities_description a:hover {
+  color: #006666;
+}
+
+.modalities_img {
+  width: 300px;
+  height: 240px;
+  float: left;
+}
+
+.modalities_img img {
+  width: 100%;
+  height: 100%;
+}
+
+.modalities_carousel {
+  margin: 0;
+  height: 240px;
+}
+
+.modalities_carousel li {
+  width: 788px;
+  height: 240px;
+  padding: 0;
+  margin: 5px;
+  border: solid 2px #999;
+}
+
+
+.modality-img {
+  float: right;
+  margin: 0 0 5px 5px;
+  border: solid 1px #999;
+}
+
+.testimonial_carousel {
+  margin-right: 0;
+  width: 240px;
+  height: 250px;
+  float: right;
+}
+
+.testimonial_carousel li {
+  display: inline-block;
+  height: 210px;
+  width: 210px;
+  padding-left: 0;
+}
+
+
+/*.customer-testimonial {
   border-bottom: solid 1px #ccc;
   margin-bottom: 10px;
 }
@@ -63,27 +141,30 @@ section article p {
   font-weight: normal;
 }
 
-.modality-img {
-  float: right;
-  margin: 0 0 5px 5px;
-  border: solid 1px #999;
-}
-
 .modalities {
   border-bottom: 1px solid #999;
+}
+
+.caroufredsel li {
+  background-image: none;
 }
 
 .projects-list {
   position: relative;
   height: 260px;
+  border: none;
+  background: none;
+  padding: 0;
 }
 
 .projects-list li {
   width: 815px;
+  border: none;
+  margin: 0;
 }
 
 .projects-list li:hover {
-  border-bottom: 1px solid #006666;
+  border-bottom: none;
 }
 
 .projects-list li img {
@@ -116,16 +197,31 @@ section article p {
   background-image: none;
 }
 
+
+.rates-list {
+  background: none;
+}
+
+.rates-list .caroufredsel_wrapper {
+  background: none;
+}
+
+.rates-list li {
+  width: 791px;
+  height: 228px;
+}
+
 .testimonial-carousel {
   width: 300px;
-  height: 200px;
+  height: 220px;
   float: right;
   margin-left: 10px;
   margin-bottom: 10px;
 }
 
 .testimonial-carousel li {
-  width: 288px;
+  width: 264px;
+  background-image: none;
 }
 
 .testimonial-carousel li .description {
@@ -141,7 +237,14 @@ section article p {
   padding-top: 0px;
 }
 
+.description {
+  margin-left: 8px;
+}
+
 .description h3 {
   margin: 0 0;
 }
+
+.projects-list li {
+}*/
 
