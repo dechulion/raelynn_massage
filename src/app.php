@@ -14,12 +14,12 @@ $app->register(new Silex\Provider\TwigServiceProvider(), array(
 ));
 
 $app['swiftmailer.options'] = array(
-    'host' => 'host',
-    'port' => '25',
-    'username' => 'raerin26',
-    'password' => '12345',
-    'encryption' => null,
-    'auth_mode' => null
+    'host' => 'smtp.gmail.com',
+    'port' => 465,
+    'username' => $_ENV['SMTP_USER'],
+    'password' => $_ENV['SMTP_PASSWORD'],
+    'encryption' => 'ssl',
+    'auth_mode' => 'login'
 );
 
 $app->before(function () use ($app) {
@@ -77,7 +77,7 @@ $app->post('/contact', function () use ($app) {
     $message = \Swift_Message::newInstance()
         ->setSubject('Keron Therapeutic Massage Contact')
         ->setFrom($request->get('email'))
-        ->setTo(array('raerin26@yahoo.com'))
+        ->setTo(array('dechulion@yahoo.com'))
         ->setBody($request->get('message'));
 
     $app['mailer']->send($message);

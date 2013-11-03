@@ -293,24 +293,6 @@
 		}
 
 
-
-    // Carausel Plugin
-    $('.caroufredsel').carouFredSel({
-
-        auto: {
-          timeoutDuration: 6000,
-          duration: 2000
-        },
-
-        swipe: {
-            onMouse: true,
-			onTouch: true
-        }
-
-    });
-
-
-
     // Play carousel when colorbox closed
     $(document).bind('cbox_closed', function () {
         $(".caroufredsel").trigger("play");
