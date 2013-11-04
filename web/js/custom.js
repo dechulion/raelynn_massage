@@ -20,7 +20,7 @@ $(".modalities_carousel").carouFredSel({
 
 
 $(".testimonial_carousel").carouFredSel({
-    width: 220,
+    width: 240,
     height: 230,
     items: {
         visible: 1,

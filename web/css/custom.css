@@ -59,6 +59,7 @@ section article p {
 
 .caroufredsel_wrapper {
   background: none;
+  margin: 0;
 }
 
 section article ul li {
@@ -116,18 +117,48 @@ background: none;
   border: solid 1px #999;
 }
 
+.testimonials_wrapper {
+  float: right;
+  margin-top: -15px;
+}
+
 .testimonial_carousel {
   margin-right: 0;
   width: 240px;
   height: 250px;
-  float: right;
 }
 
 .testimonial_carousel li {
-  display: inline-block;
+  text-align: center;
+  float: left;
   height: 210px;
   width: 210px;
-  padding-left: 0;
+  padding: 5px;
+  margin: 0;
+  border: solid 2px #999;
+}
+
+.testimonial_description {
+  font-size: .8em;
+}
+
+.testimonial_name a {
+  color: #929292;
+}
+
+.testimonials_header {
+  width: 224px;
+  text-align: center;
+  margin: 10px 15px 10px 36px;
+  border-bottom: solid 1px #999;
+}
+
+.testimonials_header a {
+  color: #009999;
+}
+
+.testimonials_header a:hover {
+  color: #006666;
 }
 
 
