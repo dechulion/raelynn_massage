@@ -35,3 +35,11 @@ $(".testimonial_carousel").carouFredSel({
     },
     auto: 5000
 });
+
+$(document).ready(function() {
+    $(".menu [href]").each(function() {
+    if (this.href == window.location.href) {
+        $(this).addClass("active");
+        }
+    });
+});

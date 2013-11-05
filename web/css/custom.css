@@ -38,6 +38,10 @@ section article p {
   padding: 5px 10px;
 }
 
+.new-client {
+  margin-left: 10px;
+}
+
 .new-client a {
   font-size: 1.5em;
   font-weight: 400;
@@ -49,12 +53,33 @@ section article p {
   letter-spacing: .05em;
 }
 
+.menu li:first-child{
+  border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+.menu li.active a {
+  background-image: none;
+}
+
+.active {
+  background-image: url(../img/opacity_10.png);
+}
+
+.forms {
+  margin: 0 0 20px 0;
+}
+
 .forms a {
   color: #009999;
 }
 
 .forms a:hover {
   color: #006666;
+}
+
+.customer-testimonial h4 {
+  border-bottom: solid 1px #666;
+  padding: 5px;
 }
 
 .caroufredsel_wrapper {
@@ -110,7 +135,6 @@ background: none;
   border: solid 2px #999;
 }
 
-
 .modality-img {
   float: right;
   margin: 0 0 5px 5px;
@@ -160,6 +184,83 @@ background: none;
 .testimonials_header a:hover {
   color: #006666;
 }
+
+section .button {
+ background-color: #009999;
+ border: 1px solid #006666;
+ box-shadow: 0 1px 0 #00bbbb inset, 0 1px 0 #007777;
+ color: #e1e1e1;
+ text-shadow: 1px 1px 0 #007777;
+}
+
+section .button:hover {
+  background-color: #006666;
+  box-shadow: 0 1px 0 #008888 inset, 0 1px 0 #004444;
+  color: #f1f1f1;
+}
+
+@media screen and (max-width: 1200px) {
+  nav, .nav-affix {
+    width: 200px;
+  }
+  .abmp {
+    margin-left: 50px;
+  }
+  .modalities_carousel li {
+    width: 610px;
+  }
+  .modalities_img {
+    width: 200px;
+    float: left;
+  }
+
+  .modalities_description {
+    width: 400px;
+    float: left;
+    margin-left: 5px;
+  }
+}
+
+@media screen and (max-width: 1030px) {
+  nav, .nav-affix {
+    width: 52px;
+    margin-left: -1px;
+  }
+  .abmp{
+    width: 50px;
+    height: 50px;
+    margin-left: 3px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .modalities_img {
+    display: none;
+  }
+  .modalities_description {
+    width: 90%;
+    margin-left: 25px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .new-client {
+    display: none;
+  }
+
+  .testimonials_wrapper {
+    float: none;
+  }
+
+  .modalities_heading {
+    display: none;
+  }
+
+  .modalities_carousel {
+    display: none;
+  }
+}
+
 
 
 
