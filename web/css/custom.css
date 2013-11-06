@@ -34,13 +34,20 @@ section article p {
 }
 
 .company_name h2 {
-  margin-top: 5px;
+  margin-top: -5px;
   margin-left: 15px;
   font-weight: 200;
   letter-spacing: .05em;
   background-image: url('/../img/hr.png');
   background-repeat: no-repeat;
   background-position: 25% 100%;
+}
+
+.company_name h4 {
+  margin-left: 20px;
+  color: #929292;
+  letter-spacing: .1em;
+  margin-top: -3px;
 }
 
 .logo {
@@ -76,6 +83,21 @@ section article p {
   font-size: 1.5em;
   font-weight: 400;
   letter-spacing: .02em;
+}
+
+.mini_header {
+  position: absolute;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: .05em;
+}
+
+.mini_business {
+  color: #d1d1d1;
+}
+
+.mini_name {
+  color: #929292;
+  font-size: .75em;
 }
 
 .author-info {
@@ -229,16 +251,25 @@ section .button:hover {
   color: #f1f1f1;
 }
 
+@media screen and (max-width: 2000px) {
+  .mini_header{
+    display: none;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   nav, .nav-affix {
     width: 200px;
   }
+
   .abmp {
     margin-left: 50px;
   }
+
   .modalities_carousel li {
     width: 610px;
   }
+
   .modalities_img {
     width: 200px;
     float: left;
@@ -249,6 +280,18 @@ section .button:hover {
     float: left;
     margin-left: 5px;
   }
+
+  .company_name {
+    width: 280px;
+  }
+
+  .company_name h2 {
+    font-size: 2.2em;
+  }
+
+  .company_name h4 {
+    font-size: 1.5em;
+  }
 }
 
 @media screen and (max-width: 1030px) {
@@ -256,11 +299,21 @@ section .button:hover {
     width: 52px;
     margin-left: -1px;
   }
+
   .abmp{
     width: 50px;
     height: 50px;
     margin-left: 3px;
   }
+
+  .new-client {
+    display: none;
+  }
+
+  .mini_header {
+    display: inherit;
+  }
+
 }
 
 @media screen and (max-width: 767px) {
@@ -273,11 +326,13 @@ section .button:hover {
   }
 }
 
-@media screen and (max-width: 400px) {
-  .new-client {
+@media screen and (max-width: 650px) {
+  .mini_name {
     display: none;
   }
+}
 
+@media screen and (max-width: 400px) {
   .testimonials_wrapper {
     float: none;
   }
@@ -287,6 +342,10 @@ section .button:hover {
   }
 
   .modalities_carousel {
+    display: none;
+  }
+
+  .pull-right, .text-right {
     display: none;
   }
 }
