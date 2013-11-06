@@ -8,6 +8,37 @@
   About Me
 {% endblock %}
 
+{% block authorinfo %}
+  <div class="span7 left-shadow">
+    <!-- find me button Start -->
+    <div id="find_me">
+      <div id="button-shadow"></div>
+      <a><i class="icon-location-arrow"></i> Find Me</a>
+    </div>
+    <!-- find me button end -->
+    <!-- author photo Start -->
+    <div class="pull-left author-image-column">
+      {# <div class="author-background"></div> #}
+      <img src="/img/raelynn.jpg" alt="Raelynn Keron" id="author-image"/>
+    </div>
+    <!-- author photo end -->
+    <!-- author name and description Start -->
+    <div class="pull-left author-infos-column">
+      <div class="author-info">
+        Raelynn Keron
+        <span class="author-work">/ Massage Therapist</span>
+      </div>
+      <div class="hr"></div>
+      <div class="author-about">
+        I like to make cool and creative designs.
+        Feel free to take a look My template.
+      </div>
+    </div>
+    <div class="clearfix"></div>
+    <!-- author name and description end -->
+  </div>
+{% endblock %}
+
 {% block content %}
 {# Testimonial Carousel Start #}
 

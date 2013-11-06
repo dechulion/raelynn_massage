@@ -1,4 +1,7 @@
 /* Add here all your CSS customizations */
+
+/*logo animation commented out in animate.css line 2118*/
+
 article {
   padding-left: 26px;
   padding-right: 30px;
@@ -21,6 +24,33 @@ section article .page-heading {
 
 section article p {
   margin-bottom: 30px;
+}
+
+.company_name {
+  height: 100px;
+  color: #d1d1d1;
+  font-family: "Open Sans", sans-serif;
+  font-variant: small-caps;
+}
+
+.company_name h2 {
+  margin-top: 5px;
+  margin-left: 15px;
+  font-weight: 200;
+  letter-spacing: .05em;
+  background-image: url('/../img/hr.png');
+  background-repeat: no-repeat;
+  background-position: 25% 100%;
+}
+
+.logo {
+  height: 150px;
+  border-radius: 10px;
+}
+
+#logo {
+  margin-top: 99px;
+  margin-bottom: 50px;
 }
 
 .service-table {

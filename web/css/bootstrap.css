@@ -684,10 +684,10 @@ h5,
 h6 {
   margin: 10px 0;
   font-family: inherit;
-  font-weight: bold;
+  font-weight: inherit;
   line-height: 20px;
   color: inherit;
-  text-rendering: optimizelegibility;
+/*  text-rendering: optimizelegibility;*/
 }
 h1 small,
 h2 small,

@@ -76,8 +76,8 @@
 
 
           <!-- Author Infos Start -->
+          {% block authorinfo %}
           <div class="span7 left-shadow">
-
 
             <!-- find me button Start -->
             <div id="find_me">
@@ -86,36 +86,20 @@
             </div>
             <!-- find me button end -->
 
-
             <!-- author photo Start -->
             <div class="pull-left author-image-column">
-              {# <div class="author-background"></div> #}
-              <img src="/img/raelynn.jpg" alt="Raelynn Keron" id="author-image"/>
+{#               <div class="author-background"></div>
+ #}              <img src="/img/raelynn.jpg" alt="Raelynn Keron" id="author-image"/>
             </div>
             <!-- author photo end -->
 
-
-            <!-- author name and description Start -->
-            <div class="pull-left author-infos-column">
-
-              <div class="author-info">
-                Raelynn Keron
-                <span class="author-work">/ Massage Therapist</span>
-              </div>
-
-              <div class="hr"></div>
-
-              <div class="author-about">
-                I like to make cool and creative designs.
-                Feel free to take a look My template.
-              </div>
-
+            <div class="pull-left company_name">
+              <h2>Keron</br>Therapeutic Massage</h2>
             </div>
             <div class="clearfix"></div>
             <!-- author name and description end -->
-
-
           </div>
+          {% endblock %}
           <!-- Author Infos End -->
 
 
@@ -206,8 +190,8 @@
 
         <!-- Logo Start -->
         <div id="logo">
-          <a href="index.html">
-            <img src="/img/logo.png" alt="Chloe" />
+          <a href="/">
+            <img src="/img/koru.jpg" alt="Koru" class="logo"/>
           </a>
         </div>
         <!-- Logo End -->
